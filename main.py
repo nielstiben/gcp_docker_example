@@ -10,7 +10,7 @@ if __name__ == '__main__':
     data = digits.images.reshape((n_samples, -1))
 
     # Create a classifier: a support vector classifier
-    clf = svm.SVC(gamma=0.001)
+    clf = svm.SVC(gamma=0.01) # default = 0.001
 
     # Split data into 50% train and 50% test subsets
     X_train, X_test, y_train, y_test = train_test_split(
